@@ -1,0 +1,26 @@
+.redbg {
+    background-color: red;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  padding: 0 40px 40px 40px;
+
+}
+
+.opacity100 {
+    opacity: 1;
+}
+
+.opacity50 {
+    opacity: 0.5;
+}
+.opacity25 {
+    opacity: 0.25;
+}
+
+.opacity0 {
+    opacity: 0.1;
+}
+

@@ -1,0 +1,36 @@
+* {
+
+  box-sizing: border-box;
+}
+
+th,td {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+th {
+  background-color: #ffffaa;
+  color: red;
+  font-size: 25px;
+}
+
+td {
+  background-color: #00ccff;
+}
+
+table {
+  border-top: 2px solid #7e7e7e;
+  border-left: 2px solid #7e7e7e;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.btns {
+  padding-left: 2px;
+  text-align: center;
+  *{
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}

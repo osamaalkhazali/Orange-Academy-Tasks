@@ -1,0 +1,38 @@
+div {
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+
+}
+
+.b1 {
+  border: 3px  black ;
+  border-style: dotted solid;
+}
+
+.b2 {
+  border: 3px solid black ;
+  border-style: solid solid dashed dotted;
+}
+
+.b3 {
+  border-width: 3px;
+  border-color: black;
+  border-style: dotted;
+  
+}
+
+.b4 {
+  border: 3px solid black ;
+}
+
+
+.b5 {
+  border: 2px solid blue;
+}
+
+.b6 {
+  border: 2px green;
+  border-style: solid solid dotted solid;
+  border-right-color: blue;
+}

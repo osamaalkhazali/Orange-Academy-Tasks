@@ -1,0 +1,13 @@
+div {
+  margin-top: 100px;
+  width: fit-content;
+  border: 2px solid blue;
+  box-shadow: 5px -5px 0px white, 
+              5px -5px 0px 2px green, 
+              12px -12px 0px white, 
+              12px -12px 0px 2px yellow , 
+              19px -19px 0px white, 
+              19px -19px 0px 2px orange, 
+              26px -26px 0px white, 
+              26px -26px 0px 2px red
+}

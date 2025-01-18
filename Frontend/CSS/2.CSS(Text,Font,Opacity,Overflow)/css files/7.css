@@ -1,0 +1,52 @@
+.red {
+    color: red;
+}
+
+.GAB {
+  color : green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.p1 {
+  background-color: rgb(110, 210, 110);
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  color: blueviolet;
+  text-decoration: underline;
+}
+
+.p2 {
+  color: pink;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 black;
+  font-weight: bolder;
+}
+
+.p3 {
+  text-transform: capitalize;
+  color: rgb(189, 132, 25);
+  text-decoration: line-through;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.p4 {
+  color: rgb(187, 187, 1);
+  text-decoration: underline ;
+  font-style: italic;
+  text-decoration-color: red;
+  font-weight: bolder;
+}
+
+#blue {
+  color: blue;
+}
+
+
+.smaller {
+  font-size: 13px;
+  line-height: 0.4;
+}

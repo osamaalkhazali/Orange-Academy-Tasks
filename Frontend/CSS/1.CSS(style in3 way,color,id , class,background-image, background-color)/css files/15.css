@@ -1,0 +1,25 @@
+.red {
+    color: red;
+}
+
+.title {
+  font-family: "Lobster", serif;
+
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #008000;
+}
+
+.bg {
+  background-color: #c0c0c0;
+  p {
+    font-weight: bold;
+  }
+}
+
+.bg2 {
+  background-color: #008000;
+}

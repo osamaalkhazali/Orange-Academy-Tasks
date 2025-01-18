@@ -1,0 +1,7 @@
+body {
+  background-image: url("https://www.w3schools.com/css/img_lights.jpg") , url("https://www.teahub.io/photos/full/15-154410_natural-summer-ocean-wave-desktop-hd-wallpaper-wave.jpg");
+background-repeat: repeat-y , repeat-x;
+background-position: left top, right top;
+background-size: 25% 100%, 25% 100%;
+color: white;
+}

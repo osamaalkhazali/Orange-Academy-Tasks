@@ -1,0 +1,24 @@
+.box {
+  width: 400px;
+  background-color: #fffee0;
+  padding: 20px;
+  border: 3px solid brown;
+}
+
+img {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 5px;
+  border-style: solid;
+  border-color: rgb(150, 97, 0) orange orange rgb(150, 97, 0) ;
+}
+
+.text {
+  width: 300px;
+  height: 200px;
+  overflow: scroll;
+  background-color: #ffff01;
+  border: 5px dashed orange;
+
+}

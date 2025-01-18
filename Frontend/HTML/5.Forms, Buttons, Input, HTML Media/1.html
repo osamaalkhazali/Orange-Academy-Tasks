@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      rel="icon"
+      href="https://www.logoeps.com/wp-content/uploads/2011/06/orange-logo-vector.png"
+      type="image/x-icon"
+    />
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        div {
+          display: flex;
+          margin-bottom: 15px;
+        }
+        label {
+          width: 50px;
+        }
+        input , textarea {
+          width: 300px;
+          margin-left: 20px;
+          max-height: 100px;
+        }
+        button {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

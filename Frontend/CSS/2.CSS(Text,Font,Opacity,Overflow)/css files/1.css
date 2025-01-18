@@ -1,0 +1,18 @@
+.overline {
+    text-decoration: overline;
+    text-decoration-color: green;
+}
+
+.through {
+    text-decoration: line-through;
+    text-decoration-color: gray;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+.overUnder {
+    text-decoration: overline underline;
+    text-decoration-color: blue ;
+}

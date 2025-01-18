@@ -1,0 +1,32 @@
+body {
+  background-color: #ffffcc;
+}
+
+p::first-letter {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.redbg {
+  background-color: red;
+}
+
+.bluebg {
+  background-color: #00ccff;
+}
+
+.purplebg {
+  background-color: #cc00cc;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  border: 2px solid gray;
+  padding: 10px;
+  margin-right: 20px;
+  
+}

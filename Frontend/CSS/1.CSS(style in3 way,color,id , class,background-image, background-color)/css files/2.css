@@ -1,0 +1,8 @@
+p:nth-child(4) {
+  color: rgb(255, 187, 0);
+}
+
+p:last-child {
+  color: yellow;
+  font-size: 3rem;
+}

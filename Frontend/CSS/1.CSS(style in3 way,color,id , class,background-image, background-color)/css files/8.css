@@ -1,0 +1,19 @@
+body {
+  background-color: #7effd4;
+}
+
+.bg1 {
+  background-color: #ee71be;
+}
+
+.bg2 {
+  background-image: url("https://www.w3schools.com/cssref/paper.gif");
+}
+
+.bg3 {
+  background-image: url("https://cdn.wallpapersafari.com/3/62/GIAwdM.jpg"), url("https://www.w3schools.com/cssref/paper.gif") ;
+  background-size: 50% 100%, 50% 100%; 
+  background-position: left top, right top; 
+  background-repeat: no-repeat, no-repeat;
+}
+

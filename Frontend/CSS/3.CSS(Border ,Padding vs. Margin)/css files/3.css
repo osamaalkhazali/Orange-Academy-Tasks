@@ -1,0 +1,28 @@
+p {
+  padding: 5px;
+  width: fit-content;
+}
+
+.ridge {
+  border: 2px ridge white;
+}
+
+.solid {
+  border: 2px solid black;
+}
+
+.double {
+  border: 2px double black;
+}
+
+.dotted {
+  border: 2px dotted black;
+}
+
+.dashed {
+  border: 2px dashed black;
+}
+
+.groove {
+  border: 2px groove black;
+}

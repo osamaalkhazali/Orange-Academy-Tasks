@@ -1,0 +1,30 @@
+.title {
+  color: green;
+  text-decoration: underline;
+}
+
+.box
+{
+  width: 400px;
+  height: 200px;
+  background-color: black;
+  color: rgb(232, 215, 114);
+  overflow: scroll;
+}
+
+.card {
+  color: #ff2222;
+  font-size: 20px;
+  font-family:   Verdana 'Lucida Sans',  sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  img {
+    width: 200px;
+    height: 150px;
+  }
+  
+}
+
+.card.opacity img {
+  opacity: 0.5;
+}

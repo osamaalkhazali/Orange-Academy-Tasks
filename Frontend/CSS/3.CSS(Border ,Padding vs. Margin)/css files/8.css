@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.blue {
+  height: 100px;
+  background-color: cyan;
+}
+
+.pink {
+  height: 100px;
+  background-color: pink;
+}
+
+p {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.larg {
+  font-size: 40px;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  width: 200px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}

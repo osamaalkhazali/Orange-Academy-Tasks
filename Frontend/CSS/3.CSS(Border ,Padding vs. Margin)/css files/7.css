@@ -1,0 +1,17 @@
+p {
+  width: fit-content;
+  margin: auto;
+  padding: 80px;
+  background-color: lightblue;
+  border: 10px solid transparent;
+  border-image: url(https://www.consciousconnectionmagazine.com/wp-content/uploads/2013/06/Sustainable-Wood.jpg) 30 round;
+
+  
+}
+
+div {
+  border: 10px solid transparent;
+  border-image: url(https://www.consciousconnectionmagazine.com/wp-content/uploads/2013/06/Sustainable-Wood.jpg) 30 round;
+  width: fit-content;
+  margin: auto;
+}

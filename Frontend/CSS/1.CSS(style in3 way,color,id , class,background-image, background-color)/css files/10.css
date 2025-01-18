@@ -1,0 +1,22 @@
+.item {
+  padding: 10px;
+  color: white;
+}
+
+.item:nth-child(even) {
+  background-color: #ffff;
+  color: black;
+}
+
+
+.blue {
+  background-color: skyblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.orange {
+  background-color: orange;
+}

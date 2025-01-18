@@ -1,0 +1,10 @@
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  background: linear-gradient(11deg, rgb(54, 233, 54) 25%,yellow 50%, rgb(91, 1, 91) 50% 75%,  rgb(0, 0, 74) 100%) ; 
+}
+  
