@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.pink {
+  background-color: #f03d64;
+  top: 0;
+  left: 0;
+}
+
+.blue {
+  background-color: #44accf;
+  top: 0px;
+  right: 0px;
+}
+
+.green {
+  background-color: #b8d74b;
+  bottom: 0px;
+  left: 0px;
+}
+
+.yellow {
+  background-color: #ebde52;
+  bottom: 0px;
+  right: 0px;
+}

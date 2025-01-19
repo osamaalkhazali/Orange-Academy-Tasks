@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+}
+
+.box {
+  color: white;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.d1 {
+  background-color: #1abc9c;
+  flex-grow: 3;
+}
+
+.d2 {
+  background-color: #3498db;
+  flex-grow: 1;
+}

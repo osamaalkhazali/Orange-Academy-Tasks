@@ -1,0 +1,31 @@
+img {
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.container {
+  position: relative;
+}
+
+.i1 {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.i2 {
+  top: 20px;
+  left: 20px;
+}
+
+.i3 {
+  top: 40px;
+  left: 40px;  
+}
+
+.i4 {
+  top: 60px;
+  left: 60px;
+}
