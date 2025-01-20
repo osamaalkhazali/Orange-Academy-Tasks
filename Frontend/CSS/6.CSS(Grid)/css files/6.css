@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #f23c69, #7d45ca); 
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3 , 1fr);
+  gap: 10px; 
+margin: 40px;
+}
+
+.box {
+  background-color: #ffc500;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box:nth-child(3) {
+grid-area: 4 / 1 / 5 / 9;
+}

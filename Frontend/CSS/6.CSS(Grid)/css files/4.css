@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .imgBox {
+    position: relative;
+    width: 550px;
+    img {
+      width: 100%;
+    }
+    .status {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      background-color: rgba(0, 0, 0, 0.651);
+      width: fit-content;
+      color: white;
+      padding: 10px;
+      font-size: 10px;
+    }
+  }

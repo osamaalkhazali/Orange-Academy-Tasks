@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.box {
+
+  text-align: left;
+}
+
+.top {
+  background-color: #d400007e;
+  grid-area: 1 / 1 / 4 / 4;
+  z-index: 2;
+}
+
+.bottom {
+  background-color: #0000ac7d;
+  grid-area: 2 / 2 / 5 / 5;
+  z-index: 0;
+}
+
+.middle {
+  background-color: #00c80071;
+  grid-area: 3 / 3 / 6 / 6;
+  z-index: 1;
+}
