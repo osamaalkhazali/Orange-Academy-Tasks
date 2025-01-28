@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="flex overflow-hidden gap-10 items-start px-11 py-5 min-h-screen bg-gray-800 max-md:flex-col max-md:p-5">
+    <nav class="flex flex-col text-2xl text-white leading-[64px] w-[200px] max-md:mb-5 max-md:w-full" role="navigation" aria-label="Main Navigation">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/75ebe989e1d957c9165dcf8cb885edd38eac37709992e8ee8f32ff563f7648f9?apiKey=8709a579793d4348aa18007044b28548&" alt="KingOS Logo" class="mb-8 w-40">
+      <div class="flex flex-col">
+        <a href="#" class="text-white no-underline duration-[0.2s] transition-[color]">Dashboard</a>
+        <a href="#" class="text-white no-underline duration-[0.2s] transition-[color]">Stress</a>
+        <a href="#" class="text-white no-underline duration-[0.2s] transition-[color]">HRV</a>
+        <a href="#" class="text-white no-underline duration-[0.2s] transition-[color]">Log</a>
+        <a href="#" class="text-white no-underline duration-[0.2s] transition-[color]">Library</a>
+      </div>
+    </nav>
+    
+    <div class="self-stretch w-px h-full max-md:hidden" role="separator"></div>
+    
+    <main class="flex-1 pt-3.5" role="main">
+      <div class="flex gap-5 justify-end items-center mb-6">
+        <form role="search" class="flex gap-4 items-center px-4 py-1.5 rounded-xl bg-white bg-opacity-10 shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+          <label for="searchInput" class="sr-only">Search</label>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ee4db18e4d1cd08f0b7ee53c0a9cd98933575cee453acb4e425e75fbccc45ff5?apiKey=8709a579793d4348aa18007044b28548&" alt="" class="w-[17px]" aria-hidden="true">
+          <input 
+            type="search" 
+            id="searchInput"
+            class="bg-transparent text-2xl text-white border-none outline-none"
+            placeholder="Search"
+            aria-label="Search">
+        </form>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e03270de0797b1ba729ca3fba933aee97f0748c073022434fa6929c4ba62e1a5?apiKey=8709a579793d4348aa18007044b28548&" alt="User profile" class="object-cover w-12 h-12 rounded-full">
+      </div>
+  
+      <section aria-label="Health Metrics" class="flex gap-5 mb-10 max-sm:flex-col">
+        <div class="text-white">
+          <h2 class="mb-2 text-2xl">Current</h2>
+          <div class="text-6xl font-bold leading-none max-sm:text-5xl">
+            <span>110</span>
+            <span class="text-xl">mg/dl</span>
+          </div>
+        </div>
+        <div class="text-white">
+          <h2 class="mb-2 text-2xl">Score (Today)</h2>
+          <div class="text-6xl font-bold leading-none max-sm:text-5xl">
+            <span>90</span>
+            <span class="text-xl">Point</span>
+          </div>
+        </div>
+      </section>
+  
+      <section aria-label="Health Charts" class="flex gap-5 mb-20 max-sm:flex-col">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3798eaa76a298aa5f6b413b982a8a5e7bc07451f1baf0f19ae0df306423b5f88?apiKey=8709a579793d4348aa18007044b28548&" alt="Health trends chart" class="overflow-hidden rounded-xl shadow-sm flex-[2]">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ca53ab250dccb31d6a47bb87f0b694388b12b939728a06f2763ef91f3d43551?apiKey=8709a579793d4348aa18007044b28548&" alt="Health statistics chart" class="overflow-hidden flex-1 rounded-xl shadow-sm">
+      </section>
+  
+      <section aria-label="Related Articles" class="text-white">
+        <h2 class="mb-12 text-5xl">Related Articles</h2>
+        <div class="grid gap-5 grid-cols-[repeat(3,1fr)] max-md:grid-cols-[repeat(2,1fr)] max-sm:grid-cols-[1fr]">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a79f9cf7805d0190d28ae48c6deca17c05b6728d0ee9f9a2e338a9d87959edb?apiKey=8709a579793d4348aa18007044b28548&" alt="Article 1" class="overflow-hidden rounded-xl shadow-sm">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/18c7f23a88ed18c046d4c74f3548e6ffed7ab2e80a89b96e0b95ff3e679d0a65?apiKey=8709a579793d4348aa18007044b28548&" alt="Article 2" class="overflow-hidden rounded-xl shadow-sm">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/527408efbe540bebd94e0a162baf49d0b2eb341173201e22a3c48dca3dc6a929?apiKey=8709a579793d4348aa18007044b28548&" alt="Article 3" class="overflow-hidden rounded-xl shadow-sm">
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

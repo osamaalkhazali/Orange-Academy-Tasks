@@ -1,0 +1,199 @@
+.projects {
+  padding: 4rem 2rem;
+  background-color: #0f0f0f;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.project-content {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  background-color: var(bg-black);
+  border: 1px solid #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  border-radius: 0.625rem; 
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-0.625rem); 
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem; 
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover img {
+  transform: translateY(-0.3125rem); 
+}
+
+.project-image {
+  border: 1px solid #333;
+  border-radius: 0.625rem; 
+  padding: 0.9375rem; 
+  aspect-ratio: 1/1;
+  width: 15em;
+  height: 15em;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+  .project-image {
+    height: 100%;
+  }
+  
+  .project {
+    flex-direction: row;
+  }
+
+
+  .projects h2 {
+    font-size: 2.4rem;
+  }
+
+
+  .project p {
+    font-size: 0.95rem;
+  }
+
+  .projects .project-grid {
+    gap: 1.5rem;
+  }
+
+  .projects .project-grid {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 3rem 1.5rem;
+  }
+
+.projects h2 {
+    font-size: 2.2rem;
+  }
+
+
+  .project p {
+    font-size: 0.9rem;
+  }
+  
+  .project {
+    flex-direction: column;
+  }
+
+
+  .projects .project-grid {
+    gap: 1.2rem;
+  }
+
+  .projects .project-grid {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+
+  .project p {
+    font-size: 0.85rem;
+  }
+
+
+  .projects .project-grid {
+    gap: 1rem;
+  }
+  
+  .project {
+    flex-direction: row;
+  }
+
+
+  .projects .project-grid {
+    grid-template-columns: repeat(1, minmax(11.25rem, 1fr)); 
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .project {
+    flex-direction: column;
+  }
+  
+  .project-image {
+    height: 100%;
+  }
+
+.projects, .contact {
+    padding: 2rem 1rem;
+  }
+
+.project {
+    padding: 1rem;
+  }
+
+.projects h2 {
+    font-size: 1.8rem;
+  }
+
+
+  .project p {
+    font-size: 0.8rem;
+  }
+
+  .projects .project-grid {
+    grid-template-columns: repeat(1, minmax(12rem, 1fr));
+  }
+}
+

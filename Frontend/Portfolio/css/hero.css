@@ -1,0 +1,131 @@
+
+.hero {
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  overflow: hidden;
+  position: relative;
+  padding-top: 60px;
+  .left {
+    width: 450px;
+    min-width: 35%;
+    padding: 0;
+    align-self: end;
+    line-height: 0;
+  }
+  
+}
+
+.bg-hero {
+  background-image: url('../images/1737804075146.jpg');
+  background-size: cover;
+}
+
+
+.table {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  .tableIMG {
+    width: 100%;
+    align-self: flex-end;
+    filter: drop-shadow(20px 20px 7px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.notes {
+position: absolute;
+width: 12%;
+top: 22%;
+left: 8%;  
+cursor: pointer;
+z-index: 5;
+filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.notes:hover {
+filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+transform: rotate(-5deg);
+transition: all 0.3s ease-in-out;
+}
+
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 25px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.right {
+display: flex ;
+align-items: center;
+justify-content: flex-end;
+flex-direction: column;
+height: 100%;
+}
+
+.left {
+margin-left: 30px;
+img {
+  filter: drop-shadow(20px 20px 7px rgba(0, 0, 0, 0.5));
+
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero {
+      background-size: 100% 100%;
+      flex-direction: column-reverse;
+      height: fit-content;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+      .left {
+        width: 100%;
+        margin-top: 100px;
+        img {
+          width: 50%;
+        }
+      }
+      *{
+          text-align: center;
+          align-self: center;
+      }
+  }
+  header {
+    padding: .75rem;
+  }
+  header nav ul {
+    gap: 0.5rem;
+  }
+}
