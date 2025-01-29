@@ -271,7 +271,7 @@ color: #626262 !important;
   margin-left: 20px;
   .nav-item{
     .nav-link{
-      text-wrap: nowrap;
+      white-space: nowrap;
     }
   }
   justify-content: space-between !important;

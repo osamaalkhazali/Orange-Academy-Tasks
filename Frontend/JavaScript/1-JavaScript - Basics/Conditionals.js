@@ -5,7 +5,12 @@
 // ● If the candidate is older than 60, print out: “You may join the seniors’ program.” 
 // ● Calculate the age using the year of birth dynamically. 
 
-function academy(age) {
+function academy(age_year) {
+  age_year = String(age_year);
+  let age 
+  if (age_year.length === 4) {
+    age =  (new Date().getFullYear() - age_year);
+  }
   if (age > 30 && age <= 60) {
     console.log("You are not eligible. You may join other programs.");
   } else if (age >= 18 && age <= 30) {
@@ -18,7 +23,7 @@ function academy(age) {
     console.log("Invalid age.");
   }
 }
-academy(70);
+academy(2005);
 
 // 2. Write a function that takes a string and switches the letters' case from upper to lower and vice versa.  
 function versa(word) {
