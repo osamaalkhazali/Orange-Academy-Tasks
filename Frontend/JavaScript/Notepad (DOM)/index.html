@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notepad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Notepad</h1>
+  <div class="actions">
+    <button class="bold">Bold</button>
+    <button class="italic">Italic</button>
+    <button class="start">Start</button>
+    <button class="end">End</button>
+    <button class="center">center</button>
+    <button class="upper">Upper</button>
+    <button class="lower">Lower</button>
+    <button class="cap">Capitalize</button>
+    <button class="clear">Clear Text</button>
+    <input class="color" type="color" name="color" id="colorPicker" title="Choose your favorite color">
+    <input  class="bgColor" type="color" name="bgColor" id="bgColorPicker" title="Choose your favorite color">
+    <input class="fontSize" type="number" name="fontSize" id="fontSize" title="Choose your favorite size" value="20" >
+    <select class="fontFamily" name="fontFamily" title="Choose your favorite font" id="fontFamily">
+      <option value="Arial">Arial</option>
+      <option value="Helvetica">Helvetica</option>
+      <option value="Times">Times New Roman</option>
+      <option value="Courier">Courier New</option>
+    </select>
+    <button class="print">Print</button>
+  </div>
+  
+  <div class="text">
+    <textarea name="text" id="text" title="Enter your text" placeholder="Enter your text"></textarea>
+  </div>
+  
+  
+  <script src="./script.js"></script>
+</body>
+</html>
