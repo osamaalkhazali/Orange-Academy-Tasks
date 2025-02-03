@@ -1,6 +1,7 @@
 const btn = document.querySelector("button");
 let users = [];
 let editedUserID;
+const contentComponent = document.querySelector(".contentComponent");
 
 function actions() {
   const deleteBtn = document.querySelectorAll(".delete");
@@ -102,6 +103,9 @@ btn.addEventListener("click", (e) => {
 
 
 // register 
+
+let usersList = JSON.parse(localStorage.getItem('usersList')) || [];
+
 const email = document.getElementById("registerEmail");
 const password = document.getElementById("password");
 const confirm = document.getElementById("confirm");
@@ -141,12 +145,79 @@ inputs.forEach(input => {
   })
 })
 
+function checkEmail() {
+  const user = usersList.find(user => user.email === email.value);
+  if (user) {
+    message.innerHTML = "Email already exists";
+    return false
+  } else {
+    message.innerHTML = "";
+    return true
+  }
+}
+
 register.addEventListener("click", e => {
   e.preventDefault();
-  if (check()) {
-    console.log("Registration successful");
+  if (check() && checkEmail()) {
+    const user = {
+      email: email.value,
+      password: password.value
+    }
+    usersList.push(user);
+    localStorage.setItem('usersList', JSON.stringify(usersList));
+    message.innerHTML = "Registration successful";
   }
 })
 
 
+// login
 
+const login = document.getElementById("login");
+const loginEmail = document.getElementById("loginEmail");
+const loginPassword = document.getElementById("loginPassword");
+const loginForm = document.getElementById("loginForm");
+const loginMessage = document.querySelector(".loginMessage");
+
+login.addEventListener("click", e => {
+  e.preventDefault();
+  const user = usersList.find(user => user.email === loginEmail.value && user.password === loginPassword.value);
+  if (user) {
+    loginMessage.innerHTML = "Login successful";
+    localStorage.setItem('user', JSON.stringify(user));
+    setTimeout(() => {
+      document.querySelector(".loginComponent").classList.add("none");
+      document.querySelector(".contentComponent").classList.remove("none");
+      loginMessage.innerHTML = "";
+    } , 1000);
+  } else {
+    loginMessage.innerHTML = "Invalid email or password";
+  }
+})
+
+const loginButton = document.getElementById("loginButton");
+loginButton.addEventListener("click", () => {
+  document.querySelector(".registerComponent").classList.add("none");
+  document.querySelector(".loginComponent").classList.remove("none");
+})
+
+const registerButton = document.getElementById("registerButton");
+registerButton.addEventListener("click", () => {
+  document.querySelector(".registerComponent").classList.remove("none");
+  document.querySelector(".loginComponent").classList.add("none");
+})
+
+window.addEventListener("load", () => {
+  const user = JSON.parse(localStorage.getItem('user'));
+  if (user) {
+    document.querySelector(".loginComponent").classList.add("none");
+    document.querySelector(".registerComponent").classList.add("none");
+    document.querySelector(".contentComponent").classList.remove("none");
+  }
+})
+
+const logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+  localStorage.removeItem('user');
+  document.querySelector(".loginComponent").classList.remove("none");
+  document.querySelector(".contentComponent").classList.add("none");
+})
