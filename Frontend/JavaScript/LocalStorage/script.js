@@ -1,5 +1,6 @@
-const btn = document.querySelector("button");
+const btn = document.querySelector(".btn");
 let users = [];
+console.log(users);
 let editedUserID;
 const contentComponent = document.querySelector(".contentComponent");
 
